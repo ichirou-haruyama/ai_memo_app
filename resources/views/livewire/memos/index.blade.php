@@ -12,6 +12,12 @@ state([
 ?>
 
 <div>
+    <div class="mb-4">
+        <a href="{{ route('memos.create') }}"
+            class="inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            新規作成
+        </a>
+    </div>
     <div class="space-y-2">
         @foreach ($memos as $memo)
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">

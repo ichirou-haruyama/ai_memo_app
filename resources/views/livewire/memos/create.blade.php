@@ -44,7 +44,11 @@ $save = function () {
             @enderror
         </div>
 
-        <div class="flex items-center justify-end">
+        <div class="flex items-center justify-end space-x-3">
+            <a href="{{ route('memos.index') }}"
+                class="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                キャンセル
+            </a>
             <button type="submit"
                 class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 保存
